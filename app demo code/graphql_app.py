@@ -10,8 +10,8 @@ from graphene import ObjectType
 from graphql.error import GraphQLError
 from graphql_relay import from_global_id
 
-from . import models
-from .database import database
+import models
+from database import database
 
 APP_ID_PREFIX = "app"
 

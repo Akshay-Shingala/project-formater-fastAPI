@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import relationship
 
-from .database import Base
+from database import Base
 
 
 class Author(Base):
@@ -23,3 +23,4 @@ class Book(Base):
     author_id = Column(Integer, ForeignKey("authors.id"))
 
     author = relationship("Author", back_populates="books")
+    dt = Column(String(200), nullable=False)
