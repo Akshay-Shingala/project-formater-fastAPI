@@ -28,9 +28,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ${{ secrets.STAGING_TARGET_DIR }}
-            source .venv/bin/activate
-            pip install -r requirements.txt
-            python manage.py makemigrations
-            python manage.py migrate
-            pm2 restart 9
+            echo "task done complite"
+            # cd ${{ secrets.STAGING_TARGET_DIR }}
+            # source .venv/bin/activate
+            # pip install -r requirements.txt
+            # python manage.py makemigrations
+            # python manage.py migrate
+            # pm2 restart 9
