@@ -1,9 +1,8 @@
 import uvicorn
-from fastapi import FastAPI
-from strawberry.fastapi import GraphQLRouter
-
 from database import create_tables, database
+from fastapi import FastAPI
 from graphql_app import schema
+from strawberry.fastapi import GraphQLRouter
 
 # Create FastAPI app
 app = FastAPI(title="FastAPI + GraphQL Demo", version="1.0.0")

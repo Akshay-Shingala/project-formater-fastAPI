@@ -4,14 +4,13 @@ from typing import List, Optional
 from uuid import UUID
 
 import graphene
+import models
 import strawberry
+from database import database
 from django.core.exceptions import ValidationError
 from graphene import ObjectType
 from graphql.error import GraphQLError
 from graphql_relay import from_global_id
-
-import models
-from database import database
 
 APP_ID_PREFIX = "app"
 
